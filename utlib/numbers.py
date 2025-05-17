@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-def sum_digit(n1, n2):
-    return n1+n2
-=======
 from decimal import Decimal, ROUND_HALF_UP
 
 
@@ -25,4 +21,3 @@ def average(values: list, decimal: int):
             return None
     else:
         return 'Decimal point out of bound'
->>>>>>> Stashed changes

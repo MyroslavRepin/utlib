@@ -1,19 +1,5 @@
-# 📚 utlib — Personal Python Utility Library by Myroslav Repin
+# Utlib - Utility Library
 
-<<<<<<< Updated upstream
-`utlib` is a customizable utility library created to simplify everyday Python development.  
-The project is currently in **early development**, and will be **actively expanded** with new tools and features.
-
----
-
-## ⚙️ Current Features
-
-✅ Add two numbers  
-🚧 Planned: more utilities, data structures, algorithms, math helpers, filters, and even AI tools
-
----
-This library is not done. I will upgrade it later
-=======
 **utlib** is a lightweight and customizable utility library designed to simplify everyday Python programming.  
 Created by Myroslav Repin, the project is in **active development** and will continue to grow with new features and improvements.
 
@@ -53,20 +39,13 @@ Created by Myroslav Repin, the project is in **active development** and will con
 - Useful decorators and wrappers
 - Useful function
 
->>>>>>> Stashed changes
 ---
 
 ## 📦 Installation
 
-<<<<<<< Updated upstream
->Library is  published on PyPI you can install it:
-
-```bash
-pip install utlib
-=======
 To install the latest version from [PyPI](https://pypi.org/project/utlib), use:
 
-```bash
+``` bash
 pip install utlib
 ````
 
@@ -96,4 +75,3 @@ If you find a bug or want to request a feature:
 This project is licensed under the [MIT License](LICENSE).
 
 ```
->>>>>>> Stashed changes

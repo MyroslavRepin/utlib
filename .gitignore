@@ -1,8 +1,5 @@
 venv
 .vscode
-<<<<<<< Updated upstream
-__pycache__
-=======
 __pycache__
 *pyc
->>>>>>> Stashed changes
+
