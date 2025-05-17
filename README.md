@@ -11,10 +11,12 @@ The project is currently in **early development**, and will be **actively expand
 🚧 Planned: more utilities, data structures, algorithms, math helpers, filters, and even AI tools
 
 ---
+This library is not done. I will upgrade it later
+---
 
 ## 📦 Installation
 
 >Library is  published on PyPI you can install it:
 
 ```bash
-pip install utlib .
+pip install utlib
