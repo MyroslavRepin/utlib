@@ -14,7 +14,7 @@ The project is currently in **early development**, and will be **actively expand
 
 ## 📦 Installation
 
-> Since the library is not published on PyPI yet, you can install it locally:
+>Library is  published on PyPI you can install it:
 
 ```bash
-pip install -e .
+pip install utlib .
