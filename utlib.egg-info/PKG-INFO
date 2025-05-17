@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: utlib
+Version: 0.1.0
+Summary: A personal utility library by Myroslav Repin
+Home-page: https://github.com/MyroslavRepin/utlib
+Author: Myroslav Repin
+Author-email: myroslavrepin@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# 📚 utlib — Personal Python Utility Library by Myroslav Repin
+
+`utlib` is a customizable utility library created to simplify everyday Python development.  
+The project is currently in **early development**, and will be **actively expanded** with new tools and features.
+
+---
+
+## ⚙️ Current Features
+
+✅ Add two numbers  
+🚧 Planned: more utilities, data structures, algorithms, math helpers, filters, and even AI tools
+
+---
+
+## 📦 Installation
+
+> Since the library is not published on PyPI yet, you can install it locally:
+
+```bash
+pip install -e .
