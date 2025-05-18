@@ -5,8 +5,10 @@ pyproject.toml
 setup.py
 tests/__init__.py
 tests/test_numbers.py
+tests/test_strings.py
 utlib/__init__.py
 utlib/numbers.py
+utlib/strings.py
 utlib.egg-info/PKG-INFO
 utlib.egg-info/SOURCES.txt
 utlib.egg-info/dependency_links.txt
