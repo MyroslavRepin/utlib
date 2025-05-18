@@ -1,0 +1,24 @@
+[project]
+name = "utlib"
+version = "0.1.3"
+description = "A utility library that contains useful functions, decorators and more"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+    { name = "Myroslav Repin", email = "myroslavrepin@gmail.com" }
+]
+keywords = ["utilities", "decorators", "tools"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/MyroslavRepin/utlib"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

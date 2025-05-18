@@ -8,8 +8,6 @@ __pycache__/
 *.pyo
 .pytest_cache
 
-dist/
-build/
 *.egg-info/
 utlib.egg-info/
 
