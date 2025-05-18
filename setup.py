@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="utlib",
-    version="0.1.2",
+    version="0.1.3",
     author="Myroslav Repin",
     author_email="myroslavrepin@gmail.com",
     description="A utility library that contains useful functions, decoraters and more",
