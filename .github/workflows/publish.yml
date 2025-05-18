@@ -6,7 +6,6 @@ on:
 
 jobs:
   build-and-publish:
-    name: Build and publish to PyPI
     runs-on: ubuntu-latest
 
     steps:
@@ -23,9 +22,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install build twine
 
+      - name: Build package
+        run: python -m build
 
       - name: Publish to PyPI
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-        run: twine upload --verbose dist/*
+        run: |
+          twine upload dist/*
