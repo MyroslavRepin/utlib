@@ -19,13 +19,19 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Returns the number of words in a given text.
   - Example: `word_count("Hello world!")` → `2`
 
-- `average_value(values, decimal, nearest=False)`
+- `vowels(lang='eng', consonants=False)` 
+  - Returns the list of vowels of supported languages including: English (eng), Russian (ru), Spanish (es), French (fr), German (de)
+  - Using secong parametr of the function you can select which list you want to return: vowels or consonants
+
+- `average_value(values, decimal)`
   - Returns the average of a list of numbers, rounded to the given decimal places.
+  - Planned to add a functionality to get the nearest value
   - If `nearest=True`, returns the value from the list closest to the average.
+  - **Note**: the output is **Decimal** class
   - Example:
     ```python
     average_value([1, 2, 3, 4, 5], 2)        # → 3.00
-    average_value([1, 2, 3, 4, 5], 2, True)  # → 3
+    average_value([1, 2, 3, 4, 5], 6)  # → 3.000000
     ```
 
 ---
@@ -54,7 +60,7 @@ pip install utlib
 ## 📄 Documentation
 
 Official documentation is coming soon.
-For now, explore the source code and docstrings to understand available functionality.
+For now, explore the source code and **README** to understand available functionality.
 
 If you have any ideas or requests for the documentation, feel free to share!
 
