@@ -1,5 +1,18 @@
 # Counting words
 def word_count(text):
+    """
+    Counts the number of words in a given text string.
+
+    Parameters:
+        text (str): The input string to count words from.
+
+    Returns:
+        int: The number of words in the input string if input is a string.
+        TypeError: If the input is not a string.
+
+    Note:
+        The function splits the input string by whitespace to determine word boundaries.
+    """
     if type(text) == str:
         text = text.split()
         return len(text)
@@ -9,6 +22,15 @@ def word_count(text):
 
 # Checking if polindrome and returning Bool
 def is_polindrome(text: str):
+    """
+    Checks if the given text is a palindrome.
+    A palindrome is a string that reads the same forwards and backwards.
+    Args:
+        text (str): The string to check.
+    Returns:
+        bool: True if the text is a palindrome, False otherwise.
+    """
+
     return text[::-1] == text
 
 
