@@ -102,3 +102,43 @@ def vowels(lang: str, consonants=False):
         return letters[lang]['vowels']
     else:
         return letters[lang]['consonants']
+
+# Removing vowels
+
+
+def remove_vowels(text: str, lang: str = 'eng', consonats: bool = False):
+    """
+    Removes vowels or consonants from the given text based on the specified parameters.
+
+    Args:
+        text (str): The input string from which vowels or consonants will be removed.
+        lang (str, optional): The language code to determine the set of vowels or consonants. Defaults to 'eng'.
+        consonats (bool, optional): If False (default), removes vowels from the text. If True, removes consonants.
+
+    Returns:
+        str: The resulting string after removing the specified characters.
+
+    Note:
+        - The function retuns lowercasse only.
+        - The function relies on an external `vowels` function to determine the set of vowels or consonants.
+        - Prints each character as either 'Vowels' or 'Consonants' during processing.
+        - String do not have any integers or special characters
+    """
+    text = text.lower()
+    if consonats == False:
+        output = []
+        for char in text:
+            if char in vowels('eng'):
+                pass            # Might add a functionality to check if posible to convert to int
+            else:
+                output.append(char)
+        return ''.join(output)
+    else:
+        output = []
+        for char in text:
+            if char in vowels('eng', True):
+                pass
+            # Might add a functionality to check if posible to convert to int
+            else:
+                output.append(char)
+        return ''.join(output)

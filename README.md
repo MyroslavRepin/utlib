@@ -33,7 +33,11 @@ Created by Myroslav Repin, the project is in **active development** and will con
     average_value([1, 2, 3, 4, 5], 2)        # → 3.00
     average_value([1, 2, 3, 4, 5], 6)  # → 3.000000
     ```
-
+- `remove_vowels(text, lang, consonants)`
+  - Returns the string without vowels
+  - Using `consonants=True` function return string with vowels only
+  - Function returning now **lower case** only
+  - `lang` by default is **eng**, supporting languages: **eng, ru, fr, es, de**
 ---
 
 ## 🚧 Planned Features
