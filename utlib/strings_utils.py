@@ -139,20 +139,21 @@ def remove_vowels(text: str, lang: str = 'eng', consonats: bool = False):
         return ''.join(output)
 
 
-def count_words(text: str, min_lenght: int = -1) -> int:
+def count_words(text: str, min_length: int = -1, max_length: int = -1) -> int:
     """
-    Counts the number of words in a given text, optionally filtering by minimum word length.
+    Counts the number of words in a given text, optionally filtering by minimum and maximum word length.
     Args:
         text (str): The input string to analyze.
-        min_lenght (int, optional): Minimum length a word must have to be counted. 
-            If set to -1 (default), all words are counted.
+        min_length (int, optional): Minimum length a word must have to be counted. 
+            If set to -1 (default), no minimum length filter is applied.
+        max_length (int, optional): Maximum length a word can have to be counted.
+            If set to -1 (default), no maximum length filter is applied.
     Returns:
-        int: The number of words that meet the criteria, as a number.
+        int: The number of words that meet the criteria.
     """
     counts = 0
     words_list = text.split()
     for word in words_list:
-        if min_lenght == -1 or len(word) >= min_lenght:
+        if (min_length == -1 or len(word) >= min_length) and (max_length == -1 or len(word) <= max_length):
             counts += 1
-
     return counts

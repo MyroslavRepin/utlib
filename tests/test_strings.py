@@ -29,10 +29,10 @@ def test_remove_vowels():
 
 
 def test_count_words():
-    assert count_words('Hello, my name is') == 4
-    assert count_words('') == 0
-    assert count_words('One') == 1
-    assert count_words('Two words') == 2
-    assert count_words('Multiple    spaces   between words') == 4
-    assert count_words('Punctuation! Should, not: affect; count?') == 5
-    assert count_words('   Leading and trailing spaces   ') == 4
+    text = "Good journey, not goodbye. - (Don't know where this came from, saw it on a headstone in a movie years ago and always stuck with me)."
+    assert count_words(text) == 26
+    assert count_words(text, min_length=4) == 16
+    assert count_words(text, max_length=3) == 10
+    assert count_words(text, min_length=3, max_length=4) == 10
+    assert count_words("") == 0
+    assert count_words(text, min_length=10) == 0

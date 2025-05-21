@@ -14,4 +14,4 @@ def get_size(path: str):
         size = os.path.getsize(path)
         return size
     except FileNotFoundError:
-        return FileNotFoundError
+        raise FileNotFoundError
