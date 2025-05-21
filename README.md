@@ -11,9 +11,9 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Returns the sum of all digits in an integer.
   - Example: `digit_sum(1234)` → `10`
 
-- `is_polindrome(text)`
+- `is_palindrome(text)`
   - Checks if a given string is a palindrome (reads the same forwards and backwards).
-  - Example: `is_polindrome("level")` → `True`
+  - Example: `is_palindrome("level")` → `True`
 
 - `word_count(text)`
   - Returns the number of words in a given text.
