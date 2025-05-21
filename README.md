@@ -26,13 +26,23 @@ Created by Myroslav Repin, the project is in **active development** and will con
 - `average_value(values, decimal)`
   - Returns the average of a list of numbers, rounded to the given decimal places.
   - Planned to add a functionality to get the nearest value
-  - If `nearest=True`, returns the value from the list closest to the average.
-  - **Note**: the output is **Decimal** class
+  - Currently `average_value()` is **not** supporting floats
   - Example:
     ```python
     average_value([1, 2, 3, 4, 5], 2)        # → 3.00
-    average_value([1, 2, 3, 4, 5], 6)  # → 3.000000
+    average_value([1, 2, 3, 4, 5], 5)  # → 3.00000
     ```
+- `remove_vowels(text, lang, consonants)`
+  - Returns the string without vowels
+  - Using `consonants=True` function return string with vowels only
+  - Function returning now **lower case** only
+  - `lang` by default is **eng**, supporting languages: **eng, ru, fr, es, de**
+- `count_words(text, min_lenght)`
+  - Number of words in `text` with length greater than or equal to `min_lenght`.
+  - `text` — input string.
+  - `min_lenght` — minimum word length (integer).
+
+
 
 ---
 
