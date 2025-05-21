@@ -103,9 +103,8 @@ def vowels(lang: str, consonants=False):
     else:
         return letters[lang]['consonants']
 
+
 # Removing vowels
-
-
 def remove_vowels(text: str, lang: str = 'eng', consonats: bool = False):
     """
     Removes vowels or consonants from the given text based on the specified parameters.
@@ -142,3 +141,23 @@ def remove_vowels(text: str, lang: str = 'eng', consonats: bool = False):
             else:
                 output.append(char)
         return ''.join(output)
+
+
+# Counting words, and can put minimum lenght of a word
+def count_words(text: str, min_lenght: int = -1) -> int:
+    """
+    Counts the number of words in a given text, optionally filtering by minimum word length.
+    Args:
+        text (str): The input string to analyze.
+        min_lenght (int, optional): Minimum length a word must have to be counted. 
+            If set to -1 (default), all words are counted.
+    Returns:
+        int: The number of words that meet the criteria, as a number.
+    """
+    counts = 0
+    words_list = text.split()
+    for word in words_list:
+        if min_lenght == -1 or len(word) >= min_lenght:
+            counts += 1
+
+    return counts

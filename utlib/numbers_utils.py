@@ -31,16 +31,11 @@ def average(values: list, decimal_place: int):
         values (list): A list of numeric values to average.
         decimal_place (int): The number of decimal places to round the result to.
     Returns:
-        Decimal: The average of the input values, rounded to the specified number of decimal places.
+        float: The average of the input values, rounded to the specified decimal places.
     Raises:
         ZeroDivisionError: If the input list is empty.
-        InvalidOperation: If the decimal quantization fails.
-    Example:
-        >>> average([1, 2, 3], 2)
-        Decimal('2.00')
     """
 
-    getcontext().prec = decimal_place + 1
-    result = Decimal(str(sum(values))) / Decimal(str(len(values)))
-    format_str = '1.' + '0' * decimal_place
-    return result.quantize(Decimal(format_str))
+    if not values:
+        raise ZeroDivisionError("Empty list")
+    return round(sum(values) / len(values), decimal_place)

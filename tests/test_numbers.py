@@ -8,5 +8,7 @@ def test_digit_sum():
 
 
 def test_average():
-    # assert average([1, 10, 20], 3) == 10.333
-    pass
+    assert average([1, 10, 20], 4) == 10.3333
+    assert average([12, -2, 5267], 3) == 1759.0
+    assert average([0, 0], 0) == 0.0
+    assert average([1, 23, 4], 2) == 9.33
