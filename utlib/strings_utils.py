@@ -1,4 +1,3 @@
-# Counting words
 def word_count(text):
     """
     Counts the number of words in a given text string.
@@ -20,7 +19,6 @@ def word_count(text):
         return TypeError
 
 
-# Checking if polindrome and returning Bool
 def is_palindrome(text: str):
     """
     Checks if the given text is a palindrome.
@@ -34,7 +32,6 @@ def is_palindrome(text: str):
     return text[::-1] == text
 
 
-# Returning vowels of 3 supported languages: English, Russian, Spanish
 def vowels(lang: str, consonants=False):
     """
     Returns a list of vowels or consonants for the specified language.
@@ -104,7 +101,6 @@ def vowels(lang: str, consonants=False):
         return letters[lang]['consonants']
 
 
-# Removing vowels
 def remove_vowels(text: str, lang: str = 'eng', consonats: bool = False):
     """
     Removes vowels or consonants from the given text based on the specified parameters.
@@ -143,7 +139,6 @@ def remove_vowels(text: str, lang: str = 'eng', consonats: bool = False):
         return ''.join(output)
 
 
-# Counting words, and can put minimum lenght of a word
 def count_words(text: str, min_lenght: int = -1) -> int:
     """
     Counts the number of words in a given text, optionally filtering by minimum word length.

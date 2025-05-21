@@ -1,7 +1,3 @@
-from decimal import Decimal, getcontext
-
-
-# Returns the sum of the digits of the given number n.
 def digit_sum(n) -> int:
     """
     Calculates the sum of the digits of a given number.
