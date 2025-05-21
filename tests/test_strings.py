@@ -1,4 +1,4 @@
-from utlib.strings_utils import word_count, is_polindrome, vowels, remove_vowels, count_words
+from utlib.strings_utils import word_count, is_palindrome, vowels, remove_vowels, count_words
 
 
 def test_word_count():
@@ -7,8 +7,8 @@ def test_word_count():
 
 
 def test_is_polindrome():
-    assert is_polindrome('heeh') == True
-    assert is_polindrome('Hello') == False
+    assert is_palindrome('heeh') == True
+    assert is_palindrome('Hello') == False
 
 
 def test_vowels():

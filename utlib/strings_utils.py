@@ -21,7 +21,7 @@ def word_count(text):
 
 
 # Checking if polindrome and returning Bool
-def is_polindrome(text: str):
+def is_palindrome(text: str):
     """
     Checks if the given text is a palindrome.
     A palindrome is a string that reads the same forwards and backwards.
