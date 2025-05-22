@@ -15,10 +15,6 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Checks if a given string is a palindrome (reads the same forwards and backwards).
   - Example: `is_palindrome("level")` → `True`
 
-- `word_count(text)`
-  - Returns the number of words in a given text.
-  - Example: `word_count("Hello world!")` → `2`
-
 - `vowels(lang='eng', consonants=False)` 
   - Returns the list of vowels of supported languages including: English (eng), Russian (ru), Spanish (es), French (fr), German (de)
   - Using secong parametr of the function you can select which list you want to return: vowels or consonants

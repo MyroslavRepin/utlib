@@ -1,19 +1,33 @@
-import os
-import pytest
 from utlib.files_utils import get_size
+import pytest
+from pathlib import Path
 
 
-def test_get_size(tmp_path):
-    test_file = tmp_path / "test_file.txt"
-    content = "Things usually happen around us, not to us. - Unknown, found on Reddit"
-    test_file.write_text(content)
+def test_single_file(tmp_path):
+    file = tmp_path / "file.txt"
+    content = b"abcdefghij"
+    file.write_bytes(content)
 
-    size = get_size(str(test_file))
-    expected_size = len(content.encode())  # размер в байтах
-
-    assert size == expected_size
+    assert get_size(file) == 10
 
 
-def test_get_size_file_not_found():
+def test_directory_with_files(tmp_path):
+    (tmp_path / "folder").mkdir()
+    file1 = tmp_path / "folder" / "file1.txt"
+    file2 = tmp_path / "folder" / "file2.txt"
+    file1.write_text("12345")
+    file2.write_text("67890")
+
+    total_size = get_size(tmp_path / "folder")
+    assert total_size == 10
+
+
+def test_nonexistent_path():
     with pytest.raises(FileNotFoundError):
         get_size("non_existent_file.txt")
+
+
+def test_invalid_path(tmp_path):
+    weird_path = tmp_path / "some_weird_thing"
+    with pytest.raises(FileNotFoundError):
+        get_size(weird_path)

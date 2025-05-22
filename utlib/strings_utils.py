@@ -1,24 +1,3 @@
-def word_count(text):
-    """
-    Counts the number of words in a given text string.
-
-    Parameters:
-        text (str): The input string to count words from.
-
-    Returns:
-        int: The number of words in the input string if input is a string.
-        TypeError: If the input is not a string.
-
-    Note:
-        The function splits the input string by whitespace to determine word boundaries.
-    """
-    if type(text) == str:
-        text = text.split()
-        return len(text)
-    else:
-        return TypeError
-
-
 def is_palindrome(text: str):
     """
     Checks if the given text is a palindrome.

@@ -1,9 +1,4 @@
-from utlib.strings_utils import word_count, is_palindrome, vowels, remove_vowels, count_words
-
-
-def test_word_count():
-    assert word_count('Hello, im trying to debug this code') == 7
-    assert word_count('') == 0
+from utlib.strings_utils import is_palindrome, vowels, remove_vowels, count_words
 
 
 def test_is_polindrome():

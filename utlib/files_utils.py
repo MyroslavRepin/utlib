@@ -1,23 +1,29 @@
-import os
 from pathlib import Path
+from typing import Union
 
 
-def get_size(path):
-    """Returns the size of a file or folder in bytes.
-    Args:
-        path (str): The path to the file.
-    Returns:
-        int: The size of the file in bytes.
-        FileNotFoundError: If the specified file does not exist.
+def get_size(path: Union[str, Path]) -> int:
     """
-    if type(path) == str:
-        total_size = 0
-        path = Path(path)
+    Returns the size of a file or folder in bytes.
 
-        for file in path.rglob('*'):
-            if file.is_file():
-                total_size += file.stat().st_size
+    Args:
+        path (str | Path): The path to a file or directory.
 
-        return total_size
+    Returns:
+        int: The size in bytes.
+
+    Raises:
+        FileNotFoundError: If the path does not exist.
+        ValueError: If the path is not a file or directory.
+    """
+    path = Path(path)
+
+    if not path.exists():
+        raise FileNotFoundError(f"Path not found: {path}")
+
+    if path.is_file():
+        return path.stat().st_size
+    elif path.is_dir():
+        return sum(f.stat().st_size for f in path.rglob('*') if f.is_file())
     else:
-        return ValueError
+        raise ValueError(f"Invalid path: {path}")

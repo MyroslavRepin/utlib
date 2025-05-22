@@ -19,19 +19,28 @@ def digit_sum(n) -> int:
     return sum(result)
 
 
-# Returns the average of the values list rounded to decimal_place decimals.
-def average(values: list, decimal_place: int):
+def average(values: list, decimal_place: int = 1, get_nearest_value: bool = False):
     """
-    Calculates the average of a list of numeric values, rounded to a specified number of decimal places.
+    Calculates the average of a list of numeric values.
+
     Args:
         values (list): A list of numeric values to average.
         decimal_place (int): The number of decimal places to round the result to.
+        get_nearest_value (bool): If True, returns the value closest to the average instead of the average itself.
+
     Returns:
-        float: The average of the input values, rounded to the specified decimal places.
+        float | int: The rounded average, or the value from the list closest to the average.
+
     Raises:
         ZeroDivisionError: If the input list is empty.
     """
-
     if not values:
         raise ZeroDivisionError("Empty list")
-    return round(sum(values) / len(values), decimal_place)
+
+    raw_avg = sum(values) / len(values)
+
+    if get_nearest_value:
+        diffs = [(abs(v - raw_avg), v) for v in values]
+        return min(diffs)[1]
+
+    return round(raw_avg, decimal_place)
