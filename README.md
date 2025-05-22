@@ -19,10 +19,10 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Returns the list of vowels of supported languages including: English (eng), Russian (ru), Spanish (es), French (fr), German (de)
   - Using secong parametr of the function you can select which list you want to return: vowels or consonants
 
-- `average_value(values, decimal)`
+- `average_value(values, decimal, get_nearest_value)`
   - Returns the average of a list of numbers, rounded to the given decimal places.
-  - Planned to add a functionality to get the nearest value
-  - Currently `average_value()` is **not** supporting floats
+  - Can return nearest value from the list to average
+  - Currently `average_value()` is supporting floats
   - Example:
     ```python
     average_value([1, 2, 3, 4, 5], 2)        # → 3.00
@@ -35,6 +35,7 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - `lang` by default is **eng**, supporting languages: **eng, ru, fr, es, de**
 - `count_words(text, min_lenght)`
   - Number of words in `text` with length greater than or equal to `min_lenght`.
+  - Now supporting `max_lenght` as an atribute.
   - `text` — input string.
   - `min_lenght` — minimum word length (integer).
 

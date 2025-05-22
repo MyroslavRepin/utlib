@@ -32,3 +32,8 @@ def test_average_negative_numbers():
     values = [-5, -1, 0, 1, 5]
     assert average(values) == 0.0
     assert average(values, get_nearest_value=True) == 0
+
+
+def test_floats_numbers():
+    assert average([1, 2.1, 3, 4.34]) == 2.6
+    assert average([15235, -1346237872, 832637.83672920973]) == -448463333.1

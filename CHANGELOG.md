@@ -5,6 +5,7 @@
 ### Changed
 - Removed duplicate `word_count()` function to eliminate redundancy
 - Adding new feature `to average_value()` now you can get a nearest value from the list to average
+- `average_number()` is **supporting floats** now
   
 ### Added
 - Enhanced `average_number()` function with new feature to find closest value to the average
