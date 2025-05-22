@@ -33,7 +33,7 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Using `consonants=True` function return string with vowels only
   - Function returning now **lower case** only
   - `lang` by default is **eng**, supporting languages: **eng, ru, fr, es, de**
-- `count_words(text, min_lenght)`
+- `count_words(text, min_lenght, max_lenght)`
   - Number of words in `text` with length greater than or equal to `min_lenght`.
   - Now supporting `max_lenght` as an atribute.
   - `text` — input string.
