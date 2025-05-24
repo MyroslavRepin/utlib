@@ -47,7 +47,6 @@ Created by Myroslav Repin, the project is in **active development** and will con
 
 - **Advanced math helpers**  
 - Filtering tools  
-- *AI-based utilities*  
 - Custom data structures  
 - Useful decorators and wrappers
 - Useful function
