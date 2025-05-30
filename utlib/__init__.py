@@ -6,6 +6,7 @@ from .strings_utils import remove_vowels
 from .strings_utils import count_words
 from .files_utils import get_size
 
-__version__ = '0.3.2'
+__version__ = '0.3.3'
+
 __all__ = ['digit_sum', 'average',
            'is_palindrome', 'vowels', 'remove_vowels', 'count_words', 'get_size']

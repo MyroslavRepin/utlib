@@ -15,7 +15,7 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Checks if a given string is a palindrome (reads the same forwards and backwards).
   - Example: `is_palindrome("level")` → `True`
 
-- `vowels(lang='eng', consonants=False)` 
+- `vowels(lang='eng', consonants=False)`
   - Returns the list of vowels of supported languages including: English (eng), Russian (ru), Spanish (es), French (fr), German (de)
   - Using secong parametr of the function you can select which list you want to return: vowels or consonants
 
@@ -24,10 +24,12 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Can return nearest value from the list to average
   - Currently `average_value()` is supporting floats
   - Example:
+
     ```python
     average_value([1, 2, 3, 4, 5], 2)        # → 3.00
     average_value([1, 2, 3, 4, 5], 5)  # → 3.00000
     ```
+
 - `remove_vowels(text, lang, consonants)`
   - Returns the string without vowels
   - Using `consonants=True` function return string with vowels only
@@ -38,8 +40,8 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - Now supporting `max_lenght` as an atribute.
   - `text` — input string.
   - `min_lenght` — minimum word length (integer).
-
-
+- `get_size(path)`
+  - Returns the size of a file or directory
 
 ---
 
@@ -78,7 +80,6 @@ If you find a bug or want to request a feature:
 
 📧 Email: [myroslavrepin@gmail.com](mailto:myroslavrepin@gmail.com)
 📁 GitHub: [github.com/MyroslavRepin/utlib](https://github.com/MyroslavRepin/utlib)
-
 
 ---
 
