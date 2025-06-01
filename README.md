@@ -8,26 +8,32 @@ Created by Myroslav Repin, the project is in **active development** and will con
 ## ✨ Current Features
 
 - `digit_sum(n)`
+
   - Returns the sum of all digits in an integer.
   - Example: `digit_sum(1234)` → `10`
 
 - `is_palindrome(text)`
+
   - Checks if a given string is a palindrome (reads the same forwards and backwards).
   - Example: `is_palindrome("level")` → `True`
 
-- `vowels(lang='eng', consonants=False)` 
+- `vowels(lang='eng', consonants=False)`
+
   - Returns the list of vowels of supported languages including: English (eng), Russian (ru), Spanish (es), French (fr), German (de)
   - Using secong parametr of the function you can select which list you want to return: vowels or consonants
 
 - `average_value(values, decimal, get_nearest_value)`
+
   - Returns the average of a list of numbers, rounded to the given decimal places.
   - Can return nearest value from the list to average
   - Currently `average_value()` is supporting floats
   - Example:
+
     ```python
     average_value([1, 2, 3, 4, 5], 2)        # → 3.00
     average_value([1, 2, 3, 4, 5], 5)  # → 3.00000
     ```
+
 - `remove_vowels(text, lang, consonants)`
   - Returns the string without vowels
   - Using `consonants=True` function return string with vowels only
@@ -39,16 +45,14 @@ Created by Myroslav Repin, the project is in **active development** and will con
   - `text` — input string.
   - `min_lenght` — minimum word length (integer).
 
-
-
 ---
 
 ## 🚧 Planned Features
 
-- **Advanced math helpers**  
-- Filtering tools  
-- *AI-based utilities*  
-- Custom data structures  
+- **Advanced math helpers**
+- Filtering tools
+- _AI-based utilities_
+- Custom data structures
 - Useful decorators and wrappers
 - Useful function
 
@@ -58,9 +62,9 @@ Created by Myroslav Repin, the project is in **active development** and will con
 
 To install the latest version from [PyPI](https://pypi.org/project/utlib), use:
 
-``` bash
+```bash
 pip install utlib
-````
+```
 
 ---
 
@@ -80,11 +84,8 @@ If you find a bug or want to request a feature:
 📧 Email: [myroslavrepin@gmail.com](mailto:myroslavrepin@gmail.com)
 📁 GitHub: [github.com/MyroslavRepin/utlib](https://github.com/MyroslavRepin/utlib)
 
-
 ---
 
 ## 📌 License
 
 This project is licensed under the [MIT License](LICENSE).
-
-```
