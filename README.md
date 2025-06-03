@@ -8,18 +8,22 @@ Created by Myroslav Repin, the project is in **active development** and will con
 ## ✨ Current Features
 
 - `digit_sum(n)`
+
   - Returns the sum of all digits in an integer.
   - Example: `digit_sum(1234)` → `10`
 
 - `is_palindrome(text)`
+
   - Checks if a given string is a palindrome (reads the same forwards and backwards).
   - Example: `is_palindrome("level")` → `True`
 
 - `vowels(lang='eng', consonants=False)`
+
   - Returns the list of vowels of supported languages including: English (eng), Russian (ru), Spanish (es), French (fr), German (de)
   - Using secong parametr of the function you can select which list you want to return: vowels or consonants
 
 - `average_value(values, decimal, get_nearest_value)`
+
   - Returns the average of a list of numbers, rounded to the given decimal places.
   - Can return nearest value from the list to average
   - Currently `average_value()` is supporting floats
@@ -47,9 +51,9 @@ Created by Myroslav Repin, the project is in **active development** and will con
 
 ## 🚧 Planned Features
 
-- **Advanced math helpers**  
-- Filtering tools  
-- Custom data structures  
+- **Advanced math helpers**
+- Filtering tools
+- Custom data structures
 - Useful decorators and wrappers
 - Useful function
 
@@ -59,16 +63,16 @@ Created by Myroslav Repin, the project is in **active development** and will con
 
 To install the latest version from [PyPI](https://pypi.org/project/utlib), use:
 
-``` bash
+```bash
 pip install utlib
-````
+```
 
 ---
 
 ## 📄 Documentation
 
 Official documentation is coming soon.
-For now, explore the source code and **README** to understand available functionality.
+For now, explore the source code and **README** and **Docs** understand available functionality.
 
 If you have any ideas or requests for the documentation, feel free to share!
 
@@ -85,6 +89,4 @@ If you find a bug or want to request a feature:
 
 ## 📌 License
 
-This project is licensed under the [MIT License](LICENSE).
-
-```
+> This project is licensed under the [MIT License](LICENSE).
